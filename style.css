@@ -47,7 +47,7 @@
     /* background-color: rgb(207, 87, 107); */
     height: 50vh;
     width: 80vw;
-    margin: 80px auto;
+    margin: 80px 37px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -58,18 +58,18 @@
 }
 
 .hello {
-    font-size: 40px;
+    font-size: 2em;
     font-family: 'Source Code Pro', monospace;
 }
 
 .name {
-    font-size: 35px;
+    font-size: 3em;
     font-weight: bold;
     font-family: 'Fira Sans', sans-serif;
 }
 
 .about {
-    font-size: 30px;
+    font-size: 2em;
     font-family: 'Source Code Pro', monospace;
 }
 
@@ -115,10 +115,10 @@
 /* Contact page */
 
 .contactform {
-    padding: 0px 40px;
+    padding: 29px;
     font-family: 'Fira Sans', sans-serif;
-    padding-top: 100px;
-
+    /* padding-top: 100px; */
+    margin: 37px;
 }
 
 .contactform h1 {
@@ -162,6 +162,9 @@
     font-family: 'Fira Sans', sans-serif;
 }
 
+.blogContainer{
+    margin: 35px;
+}
 .blogContainer h1 {
     font-family: 'Fira Sans', sans-serif;
     margin: 15px;
@@ -174,6 +177,9 @@
 
 
 /* Intro page */
+.intro{
+    margin: 35px;
+}
 
 .intro h1 {
     font-family: 'Fira Sans', sans-serif;
@@ -187,7 +193,7 @@
 
 .intro p {
     font-family: 'Source Code Pro', monospace;
-    margin: 25px;
+    margin: 15px;
 }
 
 .skillContainer {
@@ -207,24 +213,33 @@
     height: 8px;
     background-color: red;
     border-radius: 7px;
+    border: 1px solid black;
 }
 
 .hundred{
     width: 100%;
+    background-color: blue;
 }
 .seventyFive{
-    width: 100%;
+    width: 75%;
+    background-color:yellow;
 }
 .fifty{
     width: 50%;
+    background-color: green;
 }
 .twentyFive{
     width: 25%;
 }
 
 
-
-
+/* Services page */
+.services{
+    margin:50px;
+}
+.services h1{
+    font-family: 'Fira Sans', sans-serif;
+}
 
 .sidebarGo{
     transform: translate(-235px, 0px);
@@ -242,9 +257,28 @@
     margin-left: 108px;
 }
 
-/* @media (max-width:920px) {
-    .sidebar {
-        transform: translate(-235px, 0px);
-        position: absolute;
+@media (max-width:920px) {
+    .devPic img{
+        display: none;
     }
-} */
+    .sidbar{
+        width:20px;
+    }
+    .intro{
+        margin-top:0px;
+    }
+    .blogContainer{
+        margin: 0px;
+    margin-top: 28px;
+    margin-left: 31px;
+    }
+    .blogItem{
+        margin:15px;
+    }
+    .contactform{
+        padding:0px;
+    }
+    .contactform form div input {
+        width: 50vw;
+    }
+}
